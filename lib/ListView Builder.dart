@@ -22,7 +22,7 @@ class ListView2 extends StatelessWidget {
           itemBuilder:(context,index){
         return Card(
         child: ListTile(
-        leading: Image.asset("assets/images/Akaza.png"),
+        leading: Image.asset("assets/images/Akaza.jpg"),
     title: Text(Names[index]),
     subtitle: Text("Hello"),
     trailing: Text("11.30"),

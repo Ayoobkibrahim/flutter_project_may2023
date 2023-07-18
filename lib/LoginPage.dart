@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project_may2023/Home%20page.dart';
 import 'package:flutter_project_may2023/Registraion%20Page.dart';
-
+void main(){
+  runApp(MaterialApp(home: LoginPage(),));
+}
 class LoginPage extends StatelessWidget {
   String username="Ayoob";
   String password="Ayoob123";
@@ -16,7 +18,7 @@ class LoginPage extends StatelessWidget {
     appBar:AppBar(title:  Text("Login page"),),
     body:Column(
     children: [
-      Image.asset("assets/Icons/Owl.png", height: 100, width: 100),
+      Image.asset("assets/icons/Owl.png", height: 100, width: 100),
        Padding(
          padding: const EdgeInsets.all(12.0),
          child: TextField(

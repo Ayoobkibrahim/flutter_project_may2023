@@ -76,27 +76,9 @@ void main() {
   elevation: 6,
   shadowColor: Colors.black,
   child: ListTile(
-  leading: CircleAvatar(backgroundImage: AssetImage("assets/icons/strawberry.png")),
-  title: Text("strawberry"),
+  leading: CircleAvatar(backgroundImage: AssetImage("assets/icons/grapes.png")),
+  title: Text("Grapes"),
   subtitle: Text("\$250"),
-  trailing: Row(
-  mainAxisSize: MainAxisSize.min,
-  children: [
-  Icon(Icons.favorite),
-  SizedBox(width: 20),
-  Icon(Icons.shopping_cart)
-  ],
-  ) ,
-  ),
-  ),
-  const Card(
-  color: Colors.purple,
-  elevation: 6,
-  shadowColor: Colors.black,
-  child: ListTile(
-  leading: CircleAvatar(backgroundImage: AssetImage("assets/icons/watermelon.png")),
-  title: Text("watermelon"),
-  subtitle: Text("\$50"),
   trailing: Row(
   mainAxisSize: MainAxisSize.min,
   children: [

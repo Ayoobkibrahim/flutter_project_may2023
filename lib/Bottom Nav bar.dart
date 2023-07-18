@@ -4,6 +4,8 @@ import 'package:flutter_project_may2023/Assignment/Login.dart';
 import 'package:flutter_project_may2023/Assignment/SignUp.dart';
 import 'package:flutter_project_may2023/Assignment/contacts.dart';
 import 'package:flutter_project_may2023/Assignment/whatsapp%20ui.dart';
+import 'package:flutter_project_may2023/LoginPage.dart';
+import 'package:flutter_project_may2023/splash%20screen.dart';
 
 void main(){
   runApp(MaterialApp(
@@ -21,10 +23,10 @@ class _BottomNavBarStateState extends State<BottomNavBarState> {
   int index=0;
 
   var Screens=[
-    Contacts(),
-    Whatsapp(),
-    Login(),
-    SignUp()
+   Contacts(),
+   Whatsapp(),
+    Splash(),
+    LoginPage()
 
 
   ];

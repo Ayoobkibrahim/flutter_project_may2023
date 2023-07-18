@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-
+void main(){
+  runApp(MaterialApp(home: Login(),));
+}
 class Login extends StatelessWidget {
   const Login({super.key});
 

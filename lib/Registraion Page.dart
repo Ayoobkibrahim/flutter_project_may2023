@@ -1,7 +1,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_project_may2023/LoginPage.dart';
-
+void main(){
+  runApp(MaterialApp(home: RegistrationPage(),));
+}
 class RegistrationPage extends StatefulWidget {
   const RegistrationPage({super.key});
 

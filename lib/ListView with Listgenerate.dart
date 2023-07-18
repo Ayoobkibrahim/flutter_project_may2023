@@ -16,11 +16,11 @@ class ListView1 extends StatelessWidget {
 
   ];
   var Images=[
-    "assets/images/Akaza.png",
-    "assets/images/Tanjiro.png",
-    "assets/images/Zenitsu.png",
-    "assets/images/Inosuke.png",
-    "assets/images/Rengoku.png",
+    "assets/images/Akaza.jpg",
+    "assets/images/Tanjiro.jpg",
+    "assets/images/Zenitsu.jpg",
+    "assets/images/Inosuke.jpg",
+    "assets/images/Rengoku.jpg",
   ];
 
 

@@ -30,7 +30,7 @@ class Whatsapp extends StatelessWidget {
       body: ListView(
         children: const [
            ListTile(
-              leading: CircleAvatar(backgroundImage: AssetImage("assets/Icons/Inosuke.jpg")),
+              leading: CircleAvatar(backgroundImage: AssetImage("assets/images/Inosuke.jpg")),
               title: Text("Inosuke"),
               subtitle: Row(
                 children: [
@@ -41,7 +41,7 @@ class Whatsapp extends StatelessWidget {
               trailing: Text("12.00 Am")
             ),
             ListTile(
-              leading: CircleAvatar(backgroundImage: AssetImage("assets/Icons/Eren.jpg")),
+              leading: CircleAvatar(backgroundImage: AssetImage("assets/images/Eren.jpg")),
               title:  Text("Eren"),
               subtitle:  Row(
                 children: [
@@ -52,8 +52,8 @@ class Whatsapp extends StatelessWidget {
               trailing: Text("6.10 pm"),
             ),
           ListTile(
-              leading: CircleAvatar(backgroundImage: AssetImage("assets/Icons/Evi.jpg")),
-              title: Text("Levi"),
+              leading: CircleAvatar(backgroundImage: AssetImage("assets/images/Nezuko.jpg")),
+              title: Text("Nezuko"),
               subtitle:  Row(
                 children: [
                   Icon(Icons.done_all,),
@@ -63,7 +63,7 @@ class Whatsapp extends StatelessWidget {
               trailing: Text("Today") ,
             ),
           ListTile(
-              leading: CircleAvatar(backgroundImage: AssetImage("assets/Icons/Rengoku.jpg")),
+              leading: CircleAvatar(backgroundImage: AssetImage("assets/images/Rengoku.jpg")),
               title:  Text("Rengoku"),
               subtitle:  Row(
                 children: [
@@ -74,7 +74,7 @@ class Whatsapp extends StatelessWidget {
               trailing: Text("Yesterday"),
             ),
           ListTile(
-              leading: CircleAvatar(backgroundImage: AssetImage("assets/Icons/Koku.jpg")),
+              leading: CircleAvatar(backgroundImage: AssetImage("assets/images/Koku.jpg")),
               title: Text("KokuShibo"),
               subtitle:  Row(
                 children: [
@@ -85,7 +85,7 @@ class Whatsapp extends StatelessWidget {
               trailing: Text("15/05/2023"),
             ),
           ListTile(
-              leading: CircleAvatar(backgroundImage: AssetImage("assets/Icons/Gojo.jpg")),
+              leading: CircleAvatar(backgroundImage: AssetImage("assets/images/Gojo.jpg")),
               title: Text("Gojo"),
               subtitle:  Row(
                 children: [
@@ -96,7 +96,7 @@ class Whatsapp extends StatelessWidget {
               trailing:  Text("21/02/2023"),
             ),
           ListTile(
-              leading: CircleAvatar(backgroundImage: AssetImage("")),
+              leading: CircleAvatar(backgroundImage: AssetImage("assets/images/Sanemi.jpg")),
               title: Text("Sanemi"),
               subtitle:  Row(
                 children: [
@@ -107,7 +107,7 @@ class Whatsapp extends StatelessWidget {
               trailing:  Text("07.00 Am"),
             ),
           ListTile(
-              leading: CircleAvatar(backgroundImage: AssetImage("")),
+              leading: CircleAvatar(backgroundImage: AssetImage("assets/images/Yorichi.jpg")),
               title: Text("Yorichi"),
               subtitle:  Row(
                 children: [
@@ -119,8 +119,8 @@ class Whatsapp extends StatelessWidget {
             ),
 
           ListTile(
-              leading: CircleAvatar(backgroundImage: AssetImage("")),
-              title: Text("Muichiro"),
+              leading: CircleAvatar(backgroundImage: AssetImage("assets/images/Zenitsu.jpg")),
+              title: Text("Zenitsu"),
               subtitle:  Row(
                 children: [
                   Icon(Icons.done_all,color: Colors.blue,),
@@ -130,17 +130,7 @@ class Whatsapp extends StatelessWidget {
               trailing:  Text("Today"),
             ),
 
-              ListTile(
-              leading: CircleAvatar(backgroundImage: AssetImage("")),
-              title: Text("Kokushibo"),
-              subtitle:  Row(
-                children: [
-                  Icon(Icons.done_all,color: Colors.blue,),
-                  Text("Die before reach Age of 25")
-                ],
-              ),
-              trailing:  Text("12/5/2023"),
-            ),
+
         ],
       ),
     );

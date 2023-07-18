@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-
+void main(){
+  runApp(MaterialApp(home: SignUp(),));
+}
 class SignUp extends StatelessWidget {
   const SignUp({super.key});
 
