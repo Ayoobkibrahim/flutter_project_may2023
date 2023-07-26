@@ -93,7 +93,7 @@ class _FarmersState extends State<Farmers> {
                       borderRadius: BorderRadius.circular(15)),
                 );
               }
-          ),
+          )
         ],
 
       ),
