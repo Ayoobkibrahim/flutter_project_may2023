@@ -8,9 +8,15 @@ void main(){
   debugShowCheckedModeBanner: false,));
 }
 
-class MusicPlayer extends StatelessWidget {
+class MusicPlayer extends StatefulWidget {
 
 
+  @override
+  State<MusicPlayer> createState() => _MusicPlayerState();
+}
+
+class _MusicPlayerState extends State<MusicPlayer> {
+  int index =0;
   @override
   Widget build(BuildContext context) {
 
@@ -79,6 +85,26 @@ class MusicPlayer extends StatelessWidget {
 
         ],
       ),
+
+      bottomNavigationBar:BottomNavigationBar(
+        selectedItemColor: Colors.pinkAccent,
+        onTap: (tapindex) {
+          setState(() {
+            index = tapindex;
+          });
+        },
+        backgroundColor: Colors.black,
+        type: BottomNavigationBarType.fixed,
+        items: const[
+          BottomNavigationBarItem(icon: Icon(Icons.home,color: Colors.pink,),label: "home",),
+          BottomNavigationBarItem(icon: Icon(Icons.search,color: Colors.pink,),label: "search"),
+          BottomNavigationBarItem(icon: Icon(Icons.book,color: Colors.pink,),label: "Saved"),
+          BottomNavigationBarItem(icon: Icon(Icons.more_horiz,color: Colors.pink,),label: "library"),
+
+
+        ],
+        currentIndex: index,) ,
+
     );
   }
 }
@@ -101,6 +127,8 @@ class PlayListCard extends StatelessWidget {
               fit: BoxFit.fill
             )
       ),
+
     );
+
   }
 }
