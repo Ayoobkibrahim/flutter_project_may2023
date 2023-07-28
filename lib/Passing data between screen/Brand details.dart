@@ -9,7 +9,7 @@ class Branddetails extends StatelessWidget {
     final Brand = Brands.firstWhere((element)=>element["id"]==id);
     return Scaffold(
       appBar: AppBar(
-        title: Text("Single Product"),
+        title: Text("Product details"),
       ),
       body: Card(
         child: Center(

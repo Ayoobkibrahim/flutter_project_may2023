@@ -27,6 +27,7 @@ class _MusicUiState extends State<MusicUi> {
 
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
 
       body: CustomScrollView(
         slivers: [
