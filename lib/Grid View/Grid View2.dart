@@ -11,9 +11,9 @@ class GridView2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: GridView.builder(
-        itemCount: 20,
+        itemCount: 3,
           gridDelegate:const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
+              crossAxisCount: 3,
             crossAxisSpacing: 30,
             mainAxisSpacing: 20
           ), itemBuilder: (context ,index){

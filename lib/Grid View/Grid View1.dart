@@ -13,9 +13,9 @@ class GridView1 extends StatelessWidget {
       body: GridView(
         // gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 100),
          gridDelegate:const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3,
-         crossAxisSpacing: 30,
+         crossAxisSpacing: 4,
          mainAxisSpacing: 10),
-      children: List.generate(30, (index) => Card(child: Center(
+      children: List.generate(3, (index) => Card(child: Center(
         child: Image.asset("assets/images/Nezuko.jpg"),
       ),
       )
