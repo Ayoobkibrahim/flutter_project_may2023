@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project_may2023/Assignment/MusicApp/Images.dart';
+import 'package:flutter_project_may2023/Assignment/MusicApp/Play_list_Card.dart';
 
 import 'TitleWidget.dart';
 
@@ -10,12 +11,36 @@ void main(){
 
 class MusicPlayer extends StatefulWidget {
 
-
   @override
   State<MusicPlayer> createState() => _MusicPlayerState();
 }
 
+
+
 class _MusicPlayerState extends State<MusicPlayer> {
+
+
+  var images=[
+    "assets/images/dua lipa.jpg",
+    "assets/images/weekend.jpg",
+    "assets/images/Alen walker.jpg",
+    "assets/images/Ava Max.jpg",
+    "assets/images/demon-slayer-season-3.webp",
+    "assets/images/Attack On Titan.jpg",
+    "assets/images/JJK.jpg",
+  ];
+
+  var names=[
+    "Dua Lipa",
+    "Weekend",
+    "Alan Walker",
+    "Ava Max",
+    "Demon Slayer",
+    "AOT",
+    "JJk",
+  ];
+
+
   int index =0;
   @override
   Widget build(BuildContext context) {
@@ -24,11 +49,11 @@ class _MusicPlayerState extends State<MusicPlayer> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: const Center(
+        title:  Center(
           child: Text(
             "Musify",
             style: TextStyle(
-                fontSize: 28, fontWeight: FontWeight.bold, color: Colors.pinkAccent),
+                fontSize: 28, fontWeight: FontWeight.bold, color: Colors.pink.shade200),
           ),
         ),
       ),
@@ -50,13 +75,19 @@ class _MusicPlayerState extends State<MusicPlayer> {
           Expanded(
             child: ListView.builder(
               shrinkWrap: true,
-              itemCount: 7,
+              itemCount: images.length,
               itemBuilder: (context, index) =>
                   ListTile(
 
-                leading: Image.asset("assets/images/dua lipa.jpg"),
-                title: Text("Levitating",style: TextStyle(color: Colors.white),),
-                subtitle: Text("Dua Lipa",style: TextStyle(color: Colors.white),),
+                leading:
+                PlaylistCard(
+                  image: images[index] , width: "100", height: "100", margin:"0",
+
+
+
+                ),
+                title: Text("Livitating",style: TextStyle(color: Colors.white),),
+                 subtitle: Text("Dua Lipa",style: TextStyle(color: Colors.white),),
                 trailing:  const Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -95,11 +126,11 @@ class _MusicPlayerState extends State<MusicPlayer> {
         },
         backgroundColor: Colors.black,
         type: BottomNavigationBarType.fixed,
-        items: const[
-          BottomNavigationBarItem(icon: Icon(Icons.home,color: Colors.pink,),label: "home",),
-          BottomNavigationBarItem(icon: Icon(Icons.search,color: Colors.pink,),label: "search"),
-          BottomNavigationBarItem(icon: Icon(Icons.book,color: Colors.pink,),label: "Saved"),
-          BottomNavigationBarItem(icon: Icon(Icons.more_horiz,color: Colors.pink,),label: "library"),
+        items: [
+          BottomNavigationBarItem(icon: Text("Home",style: TextStyle(color: Colors.pink.shade200,fontSize: 15),),label: "."),
+          BottomNavigationBarItem(icon: Icon(Icons.search,color: Colors.white,),label: "search"),
+          BottomNavigationBarItem(icon: Icon(Icons.book,color: Colors.white),label: "Saved"),
+          BottomNavigationBarItem(icon: Icon(Icons.more_horiz,color: Colors.white),label: "library"),
 
 
         ],

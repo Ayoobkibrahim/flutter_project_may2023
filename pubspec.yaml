@@ -39,6 +39,9 @@ dependencies:
   flutter_custom_clippers: ^2.1.0
   introduction_screen: ^3.1.11
   expansion_tile_card: ^3.0.0
+  device_preview: ^1.1.0
+  google_maps_flutter: ^2.4.0
+  shared_preferences: ^2.2.0
 
 
 

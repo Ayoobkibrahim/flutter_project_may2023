@@ -37,7 +37,7 @@ class _MusicUiState extends State<MusicUi> {
             pinned: true,
 
             title: Center(child: Text("Playlist",
-              style: TextStyle(color: Colors.pinkAccent,fontSize: 27),)),
+              style: TextStyle(color: Colors.pink.shade200,fontSize: 27),)),
             bottom: AppBar(
               backgroundColor: Colors.black,
               elevation: 0,
@@ -45,14 +45,14 @@ class _MusicUiState extends State<MusicUi> {
               height: 50,
                 child:  TextField(
                   decoration: InputDecoration(
-                    suffixIcon: IconButton(icon: Icon(Icons.search,color: Colors.pinkAccent,),
+                    suffixIcon: IconButton(icon: Icon(Icons.search,color: Colors.pink.shade200,),
                    onPressed: () {
                     print("search");
                    },),
                   filled: true,
                   fillColor: Colors.black26,
                     hintText: "search...",
-                  hintStyle: TextStyle(color: Colors.pinkAccent),
+                  hintStyle: TextStyle(color: Colors.pink.shade200),
                   border: OutlineInputBorder(borderRadius: BorderRadius.circular(50),
                       borderSide: BorderSide(width: 2,color: Colors.grey)),
                     enabledBorder:  OutlineInputBorder(borderRadius: BorderRadius.circular(50),
@@ -80,16 +80,19 @@ class _MusicUiState extends State<MusicUi> {
 
       bottomNavigationBar:BottomNavigationBar(
         onTap: (tapindex) {
+
           setState(() {
             index = tapindex;
           });
         },
+        selectedItemColor: Colors.pink.shade200,
         backgroundColor: Colors.black,
           type: BottomNavigationBarType.fixed,
-          items: const[
+          items: [
             BottomNavigationBarItem(icon: Icon(Icons.home,color: Colors.white,),label: "home",),
             BottomNavigationBarItem(icon: Icon(Icons.search,color: Colors.white,),label: "search"),
-            BottomNavigationBarItem(icon: Icon(Icons.queue_music,color: Colors.white,),label: "library"),
+            BottomNavigationBarItem(icon: Text("PlayLists",style: TextStyle(color: Colors.pink.shade200,fontSize: 15),),label: "."),
+            BottomNavigationBarItem(icon: Icon(Icons.more_horiz_rounded,color: Colors.white,),label: "library"),
 
 
           ],
