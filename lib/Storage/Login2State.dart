@@ -3,6 +3,13 @@ import 'package:flutter_project_may2023/Storage/ShRegistration.dart';
 import 'package:flutter_project_may2023/Storage/SharedHome.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+void main(){
+  runApp(MaterialApp(
+    home: Login2(),
+    debugShowCheckedModeBanner: false,
+  ));
+}
+
 class Login2 extends StatefulWidget
 {
   @override
