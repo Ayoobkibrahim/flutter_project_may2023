@@ -92,6 +92,4 @@ class _LoginPageSharedState extends State<LoginPageShared> {
       ),
     );
   }
-
-
 }

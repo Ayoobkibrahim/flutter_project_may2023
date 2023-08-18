@@ -26,6 +26,27 @@ class SQLHelper {
     final id = db.insert('mycontacts', data);
     return id;
   }
+// read all the data from db
+  static Future<List<Map<String,dynamic>>> readData() async{
+    final db = await SQLHelper.OpenDb();
+    return db.query("mycontacts",orderBy: 'id');// read all the datas by id
+  }
 
-  static readData() {}
+// to upadate a single value
+  static Future<int> updateContact(int? id, String name, String phone) async {
+    final db = await SQLHelper.OpenDb();
+    final udata = {'name':name,'phone':phone};
+    final result = await db.update("mycontacts", udata, where: "id=?",whereArgs: [id]);
+    return result;
+
+  }
+
+  static Future<void> deleteData(int? id) async {
+    final db = await SQLHelper.OpenDb();
+    try {
+      db.delete('mycontacts', where: "id=?", whereArgs: [id]);
+    }catch(e){
+      print(e);
+    }
+  }
 }
