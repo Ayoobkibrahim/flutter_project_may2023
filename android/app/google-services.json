@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "768729105094",
+    "project_id": "fir-flutter-f4802",
+    "storage_bucket": "fir-flutter-f4802.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+
+        "mobilesdk_app_id": "1:768729105094:android:40bec17eabf60103228dc7",
+        "android_client_info": {
+          "package_name": "com.Ayoob.flutter_project_may2023"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768729105094-n83o3be1pdmem1ktpaktn4fopb5lk350.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbMC4Ws2GoqdQbqlxRVT0ffgGV5FmU-wI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768729105094-n83o3be1pdmem1ktpaktn4fopb5lk350.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
