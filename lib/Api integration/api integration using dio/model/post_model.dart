@@ -2,6 +2,7 @@
 //
 //     final postModel = postModelFromJson(jsonString);
 
+
 import 'dart:convert';
 
 class PostModel {

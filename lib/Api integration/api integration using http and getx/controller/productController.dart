@@ -1,6 +1,5 @@
 
 import 'package:get/get.dart';
-
 import '../Services/httpservice.dart';
 
 class ProductController extends GetxController{

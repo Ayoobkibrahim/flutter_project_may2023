@@ -3,6 +3,7 @@ import 'package:flutter_project_may2023/Api%20integration/api%20integration%20us
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
+
 class DetailsDio extends StatelessWidget {
  int index;
  DetailsDio({super.key, required this.index});
@@ -24,8 +25,7 @@ class DetailsDio extends StatelessWidget {
       Text(
           controller.post[index].body
       ),
-     ]
-     ,
+     ],
     ),
    ),
   );

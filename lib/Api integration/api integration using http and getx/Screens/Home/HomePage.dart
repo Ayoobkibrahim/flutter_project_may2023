@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_project_may2023/Api%20integration/api%20integration%20using%20http%20and%20getx/controller/productController.dart';
 import 'package:get/get.dart';
-
 import 'Widgets/productTile.dart';
 
 void main(){

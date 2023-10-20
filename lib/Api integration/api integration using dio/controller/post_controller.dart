@@ -2,7 +2,6 @@ import 'package:flutter/animation.dart';
 import 'package:get/get.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
-
 import '../model/post_model.dart';
 import '../service/Dio_service.dart';
 
