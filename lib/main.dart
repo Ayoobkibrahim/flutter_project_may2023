@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project_may2023/Assignment/contacts.dart';
-import 'package:flutter_project_may2023/LoginPage.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 
 void main(){                               // to run a program
